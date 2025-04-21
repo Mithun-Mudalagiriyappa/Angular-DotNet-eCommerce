@@ -24,7 +24,7 @@ namespace Infrastructure.Data
             return await _storeContext.Set<T>().ToListAsync();
         }
 
-        public async Task<T> GetEntityWithSpecification(ISpecification<T> specification)
+        public async Task<T?> GetEntityWithSpecification(ISpecification<T> specification)
         {
             return await ApplySpecification(specification).FirstOrDefaultAsync();
         }

@@ -1,5 +1,4 @@
 ﻿using Core.Entities;
-using System.Linq.Expressions;
 
 namespace Core.Specifications
 {
@@ -7,14 +6,14 @@ namespace Core.Specifications
     {
         public ProductsWithTypesAndBrandsSpecification()
         {
-            AddInclude(x => x.ProductBrand);
-            AddInclude(x => x.ProductType);
+            AddInclude(x => x.ProductBrand!);
+            AddInclude(x => x.ProductType!);
         }
 
         public ProductsWithTypesAndBrandsSpecification(int Id) : base(x => x.Id == Id)
         {
-            AddInclude(x => x.ProductBrand);
-            AddInclude(x => x.ProductType);
+            AddInclude(x => x.ProductBrand!);
+            AddInclude(x => x.ProductType!);
         }
     }
 }

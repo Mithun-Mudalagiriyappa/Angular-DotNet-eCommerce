@@ -10,11 +10,11 @@
 
         public string? PictureUrl { get; set; }
 
-        public ProductType? ProductType { get; set; }
+        public ProductType? ProductType { get; set; } = null;
 
         public int ProductTypeId { get; set; }
 
-        public ProductBrand? ProductBrand { get; set; }
+        public ProductBrand? ProductBrand { get; set; } = null;
 
         public int ProductBrandId { get; set; }
     }
