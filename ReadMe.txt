@@ -14,4 +14,9 @@ Angular CLI Version: 12.2.0
 npm Version: 6.14.16
 
 
+Links:
+
+https://getbootstrap.com/docs/4.4/examples/pricing/
+
+
 
